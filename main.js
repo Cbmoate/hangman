@@ -21,14 +21,14 @@ var game ={
     prompt.get(["guessLetter"], function(err,result){
       console.log("The Letter or space you guessed is" + result.guessLetter)
       var findHowManyOfUserGuess = self.currentWrd.checkIfLetterFound(result.guessLetter)
-      if (findHowManyOfUserGuess = 0){
+      if (findHowManyOfUserGuess === 0){
         console.log("You guessed wrong!")
         self.guessesRemaining--; 
       }
       else{
         console.log("You guessed right!")
-        if (currentWrd.didWeFindTheWord() true) {
-          console.log("You Won!!!")
+        if (currentWrd.didWeFindTheWord() === true) {
+          console.log("You Won!!!");
         };
       }
     });
