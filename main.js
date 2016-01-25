@@ -27,12 +27,22 @@ var game ={
       }
       else{
         console.log("You guessed right!")
-        if (currentWrd.didWeFindTheWord() === true) {
+        if (currentWrd.didWeFindTheWord() === true){
           console.log("You Won!!!");
-        };
+          return 1;
+        }
+        else if(self.guessesRemaining === 0){
+          console.log("Game Over.");
+          console.log("The word was" + self.currentWrd.word);
+        }
+        else{
+          console.log(self.currentWrd.wordRender());
+        }
       }
     });
   }
+};
 
+//starts the game
+game.startGame();
 
-}
