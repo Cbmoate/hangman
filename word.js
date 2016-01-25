@@ -21,15 +21,18 @@ function Word(wrd){
     return lettersFound;
   };
   didWeFindTheWOrd: function(){
-    this.lets.every()
-    for (var i = Things.length - 1; i >= 0; i--) {
-      Things[i]
+    if(this.lets.every(fucntion(curLet){
+      return curLet.appear === true;
+    })){
+      this.found === true
     };
+    return this.found;
   };
   wordRender: function(){
     var str = ""
-    for (var i = let.length - 1; i >= 0; i--) {
-      let[i]
+    for (var i = lets.length - 1; i >= 0; i--) {
+      str += this.lets[i].letterRender(this.lets[i]);
     };
+    return str;
   };
-}
+};
